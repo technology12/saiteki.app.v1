@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechApp</title>
+    <link rel="stylesheet" href="sass/request.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo_area">
+                <a href="/"><img height="60px" src="./image/logo.svg" alt="最適化"></a>
+                <div class="top_message">
+                    <p class="naiyou_a">材料と加工の技術</p>
+                    <p>〜解決策の最適化を支援するアプリ〜</p>
+                </div>
+            </div>
+            <a href="#" class="button_start">step2完了!</a>
+        </div>
+    </header>
+
+    
+    <main>
+        <div class="explain">
+            <div class="container">
+                <div class="explain_area">
+                    <div class="step_number">
+                        <h3>Step</h3>
+                        <div class="number">2</div>
+                    </div>
+                    <div class="step_message">
+                        <h2>問題解決で行いたいことを整理しよう！</h2>
+                        <p>ここでは，下のエリアに具体的な行動が次々に表示されます。<br>
+                        その行動を今後の活動で行いたい場合は，「採用」をクリックしてください。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="request_set">
+            <div class="container">
+                <div class="request_box">
+                    <div id="request_show" class="request_show">
+                        <p>ここに下の文字が一つづつ反映される</p>
+                    </div>
+                    <div class="request_buttons">
+                        <button id="yes" class="yes">採用</button>
+                        <button id="no" class="no">しない</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="request_list">
+            <div class="container">
+
+                <!-- <div class="list_exp">
+                    <div class="message"><p>下の一覧の中から選んでクリックしてください。</p></div>
+                </div> -->
+
+                <div class="requests">
+                    <!-- ここにプログラム側から以下の形式の要素が追加される
+                    <div class="to_do"><p>ああああああああああああああああああああああああああ</p></div> -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <p>Copyright © 2022 茨城大学 技術科授業分析研究室 .</p>
+    </footer>
+
+
+    <script src="./jquery-3.6.1.min.js"></script>
+    <script src="./request.js"></script>
+
+</body>
