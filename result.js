@@ -17,5 +17,5 @@ do_text.forEach((x, i) => {
 // 戻るボタンが押された時
 $('.button_start').on('click', function(){
     console.log('戻るボタン');
-    location.href = '/index.html?name=' + 'ok5';
+    location.href = 'https://technology12.github.io/saiteki.app.v1/index.html?name=' + 'ok5';
 });
