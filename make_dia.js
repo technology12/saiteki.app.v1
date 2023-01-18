@@ -106,5 +106,6 @@ $('.button_start').on('click', function(){
     localStorage.setItem('rank_num', set_rank_num);
 
     // トップに戻る
+    console.log('スクリプトの方のリンク');
     location.href = 'https://technology12.github.io/saiteki.app.v1/index.html?name=' + 'ok1';
 });
