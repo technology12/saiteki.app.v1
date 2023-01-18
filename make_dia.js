@@ -106,5 +106,5 @@ $('.button_start').on('click', function(){
     localStorage.setItem('rank_num', set_rank_num);
 
     // トップに戻る
-    location.href = '/index.html?name=' + 'ok1';
+    location.href = './index.html?name=' + 'ok1';
 });
