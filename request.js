@@ -147,5 +147,5 @@ $('.button_start').on('click', function(){
     localStorage.setItem('yes_requests', set_yes_requests);
 
     
-    location.href = '/index.html?name=' + 'ok2';
+    location.href = 'https://technology12.github.io/saiteki.app.v1/index.html?name=' + 'ok2';
 });
