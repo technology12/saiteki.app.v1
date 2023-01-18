@@ -448,7 +448,7 @@ $('.button_start').on('click', function(){
     let set_do_text = JSON.stringify(do_text);
     localStorage.setItem('do_text', set_do_text);
 
-    location.href = '/index.html?name=' + 'ok4';
+    location.href = 'https://technology12.github.io/saiteki.app.v1/index.html?name=' + 'ok4';
 
 });
 
