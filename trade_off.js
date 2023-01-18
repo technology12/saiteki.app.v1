@@ -111,5 +111,5 @@ $('.button_start').on('click', function(){
     let set_right_selected_orders = JSON.stringify(right_selected_orders);
     localStorage.setItem('right_selected_orders', set_right_selected_orders);
     
-    location.href = '/index.html?name=' + 'ok3';
+    location.href = 'https://technology12.github.io/saiteki.app.v1/index.html?name=' + 'ok3';
 });
