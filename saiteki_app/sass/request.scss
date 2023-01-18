@@ -1,0 +1,258 @@
+@use "reset.scss";
+
+body {
+    font-family: "Noto Sans Bold", "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    color: #2d2d2d;
+    p {
+        margin: 0;
+    }
+    background-color: #ebebeb;
+}
+
+main {
+    background-color: #fbfbfb;
+    margin-top: 87px;
+}
+
+.container {
+    width: 700px;
+    padding: 0 30px;
+    margin: 0 auto;
+    // background-color: #ebf6f7;
+}
+
+a{
+    text-decoration: none;
+}
+
+// ヘッダー
+.header {
+    height: 87px;
+    background-color: #fff;
+    border-bottom: 1px solid #ababab;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+    inset: 0;
+    margin: 0 auto;
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.logo_area {
+    display: flex;
+    align-items: flex-end;
+    margin: 12px 0px;
+    gap: 30px;
+    p {
+        font-size: 16px;
+        // background-color: #e7e7eb;
+        // border-bottom: 1px solid#2d2d2d;
+        // border-radius: 50px;
+        padding: 5px 10px;
+    }
+    .naiyou_a {
+        color: #ffffff;
+        background-color: #ababab;
+        padding: 3px 25px;
+        width: 132px;
+    }
+}
+
+.button_start {
+     /* ブラウザ特有のスタイルを無効に */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #D7DF23;
+    display: block;
+    padding: 20px 15px;
+    margin: 12px 0px;
+    border-radius: 100px;
+    transition: 0.2s;
+    box-shadow: 0px 3px 3px 0 rgba($color: #000000, $alpha: 0.3);
+
+    &:hover {
+        background-color: white;
+        color: #D7DF23;
+        border: 1px solid #D7DF23;
+        box-shadow: none;
+    }
+}
+
+
+// 説明エリア
+.explain {
+    background-color: #fff;
+}
+
+.explain_area {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    margin: 0px auto;
+    width: 550px;
+    padding: 40px 0px;
+}
+
+.step_number {
+    h3 {
+        font-size: 28px;
+        color: #ababab;
+        margin: 0px;
+
+    }
+    .number {
+        font-size: 80px;
+        line-height: 0.8;
+        margin-right: 23px;
+        margin-left: 5px;
+        font-weight: bold;
+        color: #D7DF23;
+    }
+}
+
+.step_message {
+    h2 {
+        font-size: 22px;
+        margin: 0px;
+        padding-top: 20px;
+    }
+    p {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
+
+// 要求選択の所
+.request_set {
+    background-color: #D7DF23;
+    padding: 60px 0px;
+    position: sticky;
+    top: 0px;
+    z-index: 130;
+    border-radius: 20px ;
+}
+
+.request_box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.request_show {
+    padding: 0px 28px;
+    margin-right: 5px;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 1.5em;
+    background-color: #fff;
+    border: 1px solid #ababab;
+    border-radius: 10px;
+    width: 100%;
+    p {
+        margin: 30px 0;
+    }
+}
+
+.request_buttons {
+    text-align: center;
+    width: 150px;
+    height: 100%;
+    margin: auto 0;
+
+    .yes {
+        padding: 15px 5px;
+        width: 100%;
+        margin-bottom: 5px;
+        font-size: 30px;
+        border-radius: 100px;
+        border: 2px solid rgb(242, 0, 0);
+        background-color: #e95464;
+        &:hover {
+            background-color: #ffffff;
+            color: rgb(242, 0, 0);
+            cursor: pointer;
+        }
+    }
+    .no {
+        width: 100%;
+        padding: 10px 5px;
+        font-size: 20px;
+        border-radius: 100px;
+        border: 2px solid #1e50a2;
+        background-color: #2ca9e1;
+        &:hover {
+            background-color: #ffffff;
+            color: #1e50a2;
+            cursor: pointer;
+        }
+    }
+}
+
+
+// 要求のリスト表示部分
+.list_exp {
+    .message {
+        text-align: center;
+        padding-top: 40px;
+    }
+}
+
+.request_list {
+    background-color: #ebebeb;
+}
+
+// グリッドの親
+.requests {
+    padding: 40px 0px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    column-gap: 25px;
+    row-gap: 25px;
+}
+
+// グリッドの子要素
+.to_do {
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 1px#2d2d2d;
+    p {
+        padding: 10px 10px;
+        font-size: 17px;
+    }
+    // &:hover {
+    //     cursor: pointer;
+    //     background-color: #ebebeb;
+    // }
+}
+
+// 採用された時の色付け
+.yes_selected_request {
+    border: 2px solid #e95464;
+}
+.no_selected_request {
+    border: 2px solid #2ca9e1;
+    background-color: #ebebeb;
+}
+
+// フッター
+.footer {
+    font-size: 12px;
+    color: rgb(105, 105, 105);
+    display: block;
+    background-color: #ebebeb;
+    text-align: center;
+    padding: 5px 0px 30px;
+}

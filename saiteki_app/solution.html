@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechApp</title>
+    <link rel="stylesheet" href="sass/com_dia.css">
+    <link rel="stylesheet" href="sass/solution.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo_area">
+                <a href="/"><img height="60px" src="./image/logo.svg" alt="最適化"></a>
+                <div class="top_message">
+                    <p class="naiyou_a">材料と加工の技術</p>
+                    <p>〜解決策の最適化を支援するアプリ〜</p>
+                </div>
+            </div>
+            <a href="#" class="button_start">step4完了!</a>
+        </div>
+    </header>
+
+    
+    <main>
+        <div class="explain">
+            <div class="container">
+                <div class="explain_area">
+                    <div class="step_number">
+                        <h3>Step</h3>
+                        <div class="number">4</div>
+                    </div>
+                    <div class="step_message">
+                        <h2>トレードオフを検討し，最適解を導こう！</h2>
+                        <p>ここでは，相反する２つの要求のうちどちらを優先するか考えましょう。
+                            <br>優先する要求を選択するか，両方ともに配慮した解決策を入力してください。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ダイヤモンドランキング表示部分 -->
+        <div class="solution">
+            <div class="container">
+                <div class="show_solution">
+                    <div class="ideal_dia">
+                        <div class="dia_title"><h5>理想<span>の</span>優先度<span>（ステップ１で作成）</span></h5></div>
+                        <div class="dia_area">
+                            <div class="dia_show">
+                                <div class="dia">
+                                    <div class="ranking">
+                                        <div class="l_rank1_items rank1_items"></div>
+                                        <div class="l_rank2_items rank2_items"></div>
+                                        <div class="l_rank3_items rank3_items"></div>
+                                        <div class="l_rank4_items rank4_items"></div>
+                                        <div class="l_rank5_items rank5_items"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dia_message">
+                        <h4>形を</h4>
+                        <img src="./image/left4.svg" alt="左矢印">
+                        <h4>近づけよう</h4>
+                    </div>
+                    <div class="plan_dia">
+                        <div class="dia_title"><h5>構想の優先度<span>（現時点）</span></h5></div>
+                        <div class="dia_area">
+                            <div class="dia_show">
+                                <div class="dia">
+                                    <div class="ranking">
+                                        <div class="r_rank1_items rank1_items"></div>
+                                        <div class="r_rank2_items rank2_items"></div>
+                                        <div class="r_rank3_items rank3_items"></div>
+                                        <div class="r_rank4_items rank4_items"></div>
+                                        <div class="r_rank5_items rank5_items"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ダイヤモンド操作エリア -->
+        <div class="last_area">
+            <div class="container solutions_container" id="solutions_container">
+
+                <div class="list_exp">
+                    <div class="message"><p>どちらの要求を優先するか選択し，必要に応じて修正してください。</p></div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+        <p>Copyright © 2022 茨城大学 技術科授業分析研究室 .</p>
+    </footer>
+
+
+    <script src="./jquery-3.6.1.min.js"></script>
+    <script src="./solution.js"></script>
+
+</body>
