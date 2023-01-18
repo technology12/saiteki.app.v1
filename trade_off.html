@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechApp</title>
+    <link rel="stylesheet" href="sass/trade_off.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo_area">
+                <a href="/"><img height="60px" src="./image/logo.svg" alt="最適化"></a>
+                <div class="top_message">
+                    <p class="naiyou_a">材料と加工の技術</p>
+                    <p>〜解決策の最適化を支援するアプリ〜</p>
+                </div>
+            </div>
+            <a href="#" class="button_start">step3完了!</a>
+        </div>
+    </header>
+
+    
+    <main>
+        <div class="explain">
+            <div class="container">
+                <div class="explain_area">
+                    <div class="step_number">
+                        <h3>Step</h3>
+                        <div class="number">3</div>
+                    </div>
+                    <div class="step_message">
+                        <h2>要求のトレードオフを整理しよう！</h2>
+                        <p>ここでは，何と何が相反する関係（トレードオフ）にあるか整理しましょう。<br>
+                        下の一覧から選ぶか，「犠牲になるものはない」をクリックして決定してください。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="trade_off_area">
+            <div class="container">
+                <div class="tenbin_box">
+                    <div class="tenbin_img"><img src="./image/tenbin.png" alt="天秤画像"></div>
+                    <div id="left_request" class="left_request request">
+                        <p>左</p>
+                    </div>
+                    <div id="right_request" class="right_request request">
+                        <p>右</p>
+                    </div>
+                    <h2 class="left_massage">これを行うことで…</h2>
+                    <h2 class="right_massage">これが犠牲になる</h2>
+                    <div class="button_area">
+                        <button id="decide" class="decide">決定</button>
+                        <button id="nothing" class="nothing">犠牲になるものはない</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="request_list">
+            <div class="container">
+                <div class="list_exp">
+                    <div class="message"><p>下の一覧の中から選んでクリックしてください。</p></div>
+                </div>
+
+
+                <div class="requests">
+                    <!-- ここに以下の形式で前の画面で採用されたリクエストが追加される。 -->
+                    <!-- <div class="to_do"><p>ああああああああああああああああああああああああああ</p></div> -->
+
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+
+    <footer class="footer">
+        <p>Copyright © 2022 茨城大学 技術科授業分析研究室 .</p>
+    </footer>
+
+
+    <script src="./jquery-3.6.1.min.js"></script>
+    <script src="./trade_off.js"></script>
+
+
+</body>
